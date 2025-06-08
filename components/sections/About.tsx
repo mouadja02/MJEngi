@@ -51,7 +51,7 @@ const About = () => {
         <div className="text-center mb-10">
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">My Quote</h3>
           <blockquote className="max-w-3xl mx-auto border-l-4 border-indigo-500 pl-6 italic text-gray-700 dark:text-gray-300 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm p-6 rounded-r-lg text-lg shadow-md border border-white/20 dark:border-gray-700/50">
-            "Continuous learning is not just my strategy — it's my competitive advantage."
+            &ldquo;Continuous learning is not just my strategy — it&apos;s my competitive advantage.&rdquo;
           </blockquote>
           
           {/* Signature */}
