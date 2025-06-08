@@ -16,7 +16,7 @@ const Certifications = () => {
       name: 'Data Engineering Professional Certificate',
       status: 'In progress',
       id: '',
-      icon: '/my-images/ibm.png',
+      icon: '/images/ibm.png',
       color: 'from-blue-500 to-blue-600'
     },
     {
@@ -24,7 +24,7 @@ const Certifications = () => {
       name: 'Machine Learning for Trading',
       status: 'Issued in May 2025',
       id: 'NC1D4D6YB39E',
-      icon: '/my-images/gcp.png',
+      icon: '/images/gcp.png',
       color: 'from-green-500 to-blue-500'
     },
     {
@@ -32,7 +32,7 @@ const Certifications = () => {
       name: 'Modern Data Engineering with Snowflake',
       status: 'Issued in October 2024',
       id: 'Z1LFG4VV1KY1',
-      icon: '/my-images/snowflake.png',
+      icon: '/images/snowflake.png',
       color: 'from-blue-400 to-cyan-500'
     },
     {
@@ -40,7 +40,7 @@ const Certifications = () => {
       name: 'Specialization in IT Support',
       status: 'Issued in August 2024',
       id: '4NKNVNGX01MA',
-      icon: '/my-images/google.png',
+      icon: '/images/google.png',
       color: 'from-red-500 to-yellow-500'
     },
     {
@@ -48,7 +48,7 @@ const Certifications = () => {
       name: 'Artificial Intelligence on Microsoft Azure',
       status: 'Issued in October 2024',
       id: 'Z1LFG4VV1KY1',
-      icon: '/my-images/microsoft.png',
+      icon: '/images/microsoft.png',
       color: 'from-red-400 to-yellow-500'
     },
     {
@@ -56,7 +56,7 @@ const Certifications = () => {
       name: 'MAchine Learning with Python',
       status: 'Issued in July 2025',
       id: '',
-      icon: '/my-images/ibm.png',
+      icon: '/images/ibm.png',
       color: 'from-blue-500 to-blue-600'
     }
   ]

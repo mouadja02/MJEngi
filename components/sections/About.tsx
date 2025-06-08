@@ -66,7 +66,7 @@ const About = () => {
           <div className="flex justify-center mt-4">
             <div className="relative w-48 h-24 bg-transparent">
               <Image
-                src={getImagePath("/my-images/signature.png")}
+                src={getImagePath("/images/signature.png")}
                 alt="Signature"
                 fill
                 className="object-contain bg-transparent"

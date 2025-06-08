@@ -30,10 +30,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico' },
-      { url: '/my-images/mj.png', type: 'image/png' },
+      { url: '/images/mj.png', type: 'image/png' },
     ],
     shortcut: '/favicon.ico',
-    apple: '/my-images/mj.png',
+    apple: '/images/mj.png',
   },
   openGraph: {
     type: 'website',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: 'MJ Portfolio',
     images: [
       {
-        url: '/my-images/mj.png',
+        url: '/images/mj.png',
         width: 1200,
         height: 630,
         alt: 'Mouad Jaouhari - Data & ML Engineer',

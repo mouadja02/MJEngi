@@ -109,7 +109,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/gcp.png")}
+                      src={getImagePath("/images/gcp.png")}
                       alt="Google Cloud Platform"
                       width={32}
                       height={32}
@@ -137,7 +137,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/aws.png")}
+                      src={getImagePath("/images/aws.png")}
                       alt="Amazon Web Services"
                       width={32}
                       height={32}
@@ -165,7 +165,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/snowflake.png")}
+                      src={getImagePath("/images/snowflake.png")}
                       alt="Snowflake"
                       width={32}
                       height={32}
@@ -193,7 +193,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/python.png")}
+                      src={getImagePath("/images/python.png")}
                       alt="Python"
                       width={32}
                       height={32}
@@ -221,7 +221,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/apache-spark.png")}
+                      src={getImagePath("/images/apache-spark.png")}
                       alt="Apache Spark"
                       width={32}
                       height={32}
@@ -249,7 +249,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/postgresql.png")}
+                      src={getImagePath("/images/postgresql.png")}
                       alt="PostgreSQL"
                       width={32}
                       height={32}
@@ -295,7 +295,7 @@ const Hero = () => {
                 {/* Main Profile Container */}
                 <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-2xl hover:scale-105 transition-all duration-500 border-4 border-white dark:border-gray-700 bg-white dark:bg-gray-800 z-10">
                   <Image
-                    src={getImagePath("/my-images/mypic.png")}
+                    src={getImagePath("/images/mypic.png")}
                     alt="Profile Picture"
                     width={192}
                     height={192}
