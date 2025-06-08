@@ -248,23 +248,7 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Research Publication Highlight */}
-        <div className="mt-16 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-xl p-8">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">Research Publication</h3>
-            <p className="text-lg mb-2">
-              &ldquo;Fast Time-of-Visibility Estimation for Real-Time Direct-to-Satellite IoT Connectivity&rdquo;
-            </p>
-            <p className="text-primary-100 mb-4">IEEE • September 2024</p>
-            <button 
-              className="bg-white text-primary-600 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200"
-              onClick={() => window.open('https://ieeexplore.ieee.org/document/10667193/', '_blank')}
-            >
-              View Publication
-            </button>
-          </div>
-        </div>
-      </div>
+              </div>
     </section>
   )
 }
