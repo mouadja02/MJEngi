@@ -20,6 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mouadja02.github.io/MJEngi'),
   title: 'MJEngi',
   description: 'Data & ML engineer with expertise in cloud computing, machine learning, and data infrastructure. Building end-to-end data pipelines and ML-powered applications.',
   keywords: ['Data Engineer', 'Machine Learning', 'ML Engineer', 'Cloud Computing', 'AWS', 'GCP', 'Snowflake', 'Python', 'Data Science', 'Mouad Jaouhari', 'MJ'],
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourusername.github.io/ProPortfolio',
+    url: 'https://mouadja02.github.io/MJEngi',
     title: 'Mouad Jaouhari | Data & ML Engineer Portfolio',
     description: 'Data & ML engineer with expertise in cloud computing, machine learning, and data infrastructure.',
     siteName: 'MJ Portfolio',
