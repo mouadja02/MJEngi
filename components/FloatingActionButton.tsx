@@ -1,8 +1,14 @@
 const FloatingActionButton = () => {
+  // Helper function to get the correct path for production
+  const getImagePath = (imagePath: string) => {
+    const basePath = process.env.NODE_ENV === 'production' ? '/MJEngi' : '';
+    return `${basePath}${imagePath}`;
+  };
+
   const downloadResume = () => {
     // Create a placeholder PDF download
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
+    link.href = getImagePath('/resume.pdf')
     link.download = 'Mouad_Jaouhari_Resume.pdf'
     link.click()
   }

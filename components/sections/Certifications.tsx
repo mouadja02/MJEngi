@@ -3,6 +3,12 @@
 import React from 'react'
 import Image from 'next/image'
 
+// Helper function to get the correct image path for production
+const getImagePath = (imagePath: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/MJEngi' : '';
+  return `${basePath}${imagePath}`;
+};
+
 const Certifications = () => {
   const certifications = [
     {
@@ -81,7 +87,7 @@ const Certifications = () => {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-lg overflow-hidden shadow-md mr-4 bg-white dark:bg-gray-700 flex items-center justify-center">
                     <Image
-                      src={cert.icon}
+                      src={getImagePath(cert.icon)}
                       alt={`${cert.organization} logo`}
                       width={32}
                       height={32}

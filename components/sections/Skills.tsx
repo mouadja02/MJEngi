@@ -3,6 +3,12 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
+// Helper function to get the correct image path for production
+const getImagePath = (imagePath: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/MJEngi' : '';
+  return `${basePath}${imagePath}`;
+};
+
 const skills = [
   {
     name: 'Google Cloud Platform',
@@ -78,7 +84,7 @@ const Skills = () => {
                 {/* Icon */}
                 <div className="w-16 h-16 mb-4 relative group-hover:scale-110 transition-transform duration-300">
                   <Image
-                    src={skill.icon}
+                    src={getImagePath(skill.icon)}
                     alt={skill.name}
                     fill
                     className="object-contain"

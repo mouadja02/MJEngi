@@ -2,6 +2,13 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+
+// Helper function to get the correct image path for production
+const getImagePath = (imagePath: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/MJEngi' : '';
+  return `${basePath}${imagePath}`;
+};
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState('')
@@ -48,7 +55,7 @@ const Hero = () => {
   const downloadResume = () => {
     // Create a placeholder PDF download
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
+    link.href = getImagePath('/resume.pdf')
     link.download = 'Mouad_Jaouhari_Resume.pdf'
     link.click()
   }
@@ -102,7 +109,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/GCP.png"
+                      src={getImagePath("/images/GCP.png")}
                       alt="Google Cloud Platform"
                       width={32}
                       height={32}
@@ -130,7 +137,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/AWS.png"
+                      src={getImagePath("/images/AWS.png")}
                       alt="Amazon Web Services"
                       width={32}
                       height={32}
@@ -158,7 +165,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/Snowflake.png"
+                      src={getImagePath("/images/Snowflake.png")}
                       alt="Snowflake"
                       width={32}
                       height={32}
@@ -186,7 +193,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/Python.png"
+                      src={getImagePath("/images/Python.png")}
                       alt="Python"
                       width={32}
                       height={32}
@@ -214,7 +221,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/apache-Spark.png"
+                      src={getImagePath("/images/apache-Spark.png")}
                       alt="Apache Spark"
                       width={32}
                       height={32}
@@ -242,7 +249,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/PostgreSQL.png"
+                      src={getImagePath("/images/PostgreSQL.png")}
                       alt="PostgreSQL"
                       width={32}
                       height={32}
@@ -288,7 +295,7 @@ const Hero = () => {
                 {/* Main Profile Container */}
                 <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-2xl hover:scale-105 transition-all duration-500 border-4 border-white dark:border-gray-700 bg-white dark:bg-gray-800 z-10">
                   <Image
-                    src="/images/mypic.png"
+                    src={getImagePath("/images/mypic.png")}
                     alt="Profile Picture"
                     width={192}
                     height={192}

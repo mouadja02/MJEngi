@@ -2,6 +2,14 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+
+// Helper function to get the correct image path for production
+const getImagePath = (imagePath: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/MJEngi' : '';
+  return `${basePath}${imagePath}`;
+};
 
 const About = () => {
   const [counters, setCounters] = useState({
@@ -58,7 +66,7 @@ const About = () => {
           <div className="flex justify-center mt-4">
             <div className="relative w-48 h-24 bg-transparent">
               <Image
-                                      src="/images/signature.png"
+                src={getImagePath("/images/signature.png")}
                 alt="Signature"
                 fill
                 className="object-contain bg-transparent"

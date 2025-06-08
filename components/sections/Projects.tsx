@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 interface Project {
   id: number
@@ -20,6 +21,12 @@ interface Project {
   architectureUrl?: string
   imageUrl?: string
 }
+
+// Helper function to get the correct image path for production
+const getImagePath = (imagePath: string) => {
+  const basePath = process.env.NODE_ENV === 'production' ? '/MJEngi' : '';
+  return `${basePath}${imagePath}`;
+};
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
@@ -331,7 +338,7 @@ const Projects = () => {
                 {/* Architecture Image */}
                 <div className="w-full h-[70vh] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/bitcoin-architecture.png"
+                    src={getImagePath("/images/bitcoin-architecture.png")}
                     alt="Bitcoin Trading Platform Architecture"
                     width={1200}
                     height={800}
