@@ -10,11 +10,11 @@ const About = () => {
     technologies: 0,
   })
 
-  const finalCounts = {
+  const finalCounts = React.useMemo(() => ({
     experience: 3,
     projects: 15,
     technologies: 25,
-  }
+  }), [])
 
   useEffect(() => {
     const duration = 2000
