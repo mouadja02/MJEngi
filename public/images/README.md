@@ -12,7 +12,7 @@ This directory contains all the images used in the portfolio website.
 - **GCP.png** - Google Cloud Platform logo
 - **AWS.png** - Amazon Web Services logo  
 - **Python.png** - Python programming language logo
-- **TensorFlow.png** - TensorFlow framework logo
+- **tf.png** - TensorFlow framework logo
 - **Airflow.png** - Apache Airflow logo
 - **Spark.png** - Apache Spark logo
 - **Snowflake.png** - Snowflake data platform logo

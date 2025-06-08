@@ -27,7 +27,7 @@ const skills = [
   },
   {
     name: 'TensorFlow',
-    icon: '/images/TensorFlow.png',
+    icon: '/images/tf.png',
     description: 'Deep learning framework used for computer vision and NLP projects, including satellite IoT research'
   },
   {
