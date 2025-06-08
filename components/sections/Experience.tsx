@@ -253,7 +253,7 @@ const Experience = () => {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Research Publication</h3>
             <p className="text-lg mb-2">
-              "Fast Time-of-Visibility Estimation for Real-Time Direct-to-Satellite IoT Connectivity"
+              &ldquo;Fast Time-of-Visibility Estimation for Real-Time Direct-to-Satellite IoT Connectivity&rdquo;
             </p>
             <p className="text-primary-100 mb-4">IEEE • September 2024</p>
             <button 
