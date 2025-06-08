@@ -60,9 +60,9 @@ const Projects = () => {
         'Achieved 15% improvement in trading strategy performance',
         'Created comprehensive market analysis dashboard'
       ],
-      architectureUrl: '/images/bitcoin-architecture.png',
+      architectureUrl: '/my-images/bitcoin-architecture.png',
       liveUrl: '#',
-      imageUrl: '/images/bitcoin-trading.png'
+      imageUrl: '/my-images/bitcoin-trading.png'
     },
     {
       id: 2,
@@ -87,7 +87,7 @@ const Projects = () => {
       outcomes: [
         'Implemented automated data migration pipelines'
       ],
-      imageUrl: '/images/data-migration.png'
+      imageUrl: '/my-images/data-migration.png'
     },
     {
       id: 3,
@@ -117,7 +117,7 @@ const Projects = () => {
         'Contributed to satellite IoT research field'
       ],
       downloadUrl: 'https://ieeexplore.ieee.org/document/10667193/',
-      imageUrl: '/images/satellite-iot.png'
+      imageUrl: '/my-images/satellite-iot.png'
     }
   ]
 
@@ -338,7 +338,7 @@ const Projects = () => {
                 {/* Architecture Image */}
                 <div className="w-full h-[70vh] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
                   <Image
-                    src={getImagePath("/images/bitcoin-architecture.png")}
+                    src={getImagePath("/my-images/bitcoin-architecture.png")}
                     alt="Bitcoin Trading Platform Architecture"
                     width={1200}
                     height={800}
