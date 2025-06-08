@@ -109,7 +109,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/images/GCP.png")}
+                      src={getImagePath("/images/gcp.png")}
                       alt="Google Cloud Platform"
                       width={32}
                       height={32}
@@ -137,7 +137,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/images/AWS.png")}
+                      src={getImagePath("/images/aws.png")}
                       alt="Amazon Web Services"
                       width={32}
                       height={32}
@@ -165,7 +165,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/images/Snowflake.png")}
+                      src={getImagePath("/images/snowflake.png")}
                       alt="Snowflake"
                       width={32}
                       height={32}
@@ -193,7 +193,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/images/Python.png")}
+                      src={getImagePath("/images/python.png")}
                       alt="Python"
                       width={32}
                       height={32}
@@ -249,7 +249,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/images/PostgreSQL.png")}
+                      src={getImagePath("/images/postgresql.png")}
                       alt="PostgreSQL"
                       width={32}
                       height={32}

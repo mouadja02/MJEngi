@@ -12,17 +12,17 @@ const getImagePath = (imagePath: string) => {
 const skills = [
   {
     name: 'Google Cloud Platform',
-    icon: '/images/GCP.png',
+    icon: '/images/gcp.png',
     description: 'Used for building scalable ML pipelines and data processing workflows at Stellantis and personal projects'
   },
   {
     name: 'Amazon Web Services',
-    icon: '/images/AWS.png',
+    icon: '/images/aws.png',
     description: 'Implemented data migration pipelines and cloud infrastructure for enterprise-scale applications'
   },
   {
     name: 'Python',
-    icon: '/images/Python.png',
+    icon: '/images/python.png',
     description: 'Primary language for ML development, data analysis, and backend services across all projects'
   },
   {
@@ -32,27 +32,27 @@ const skills = [
   },
   {
     name: 'Apache Airflow',
-    icon: '/images/Airflow.png',
+    icon: '/images/aiflow.png',
     description: 'Used for building scalable ML pipelines and data processing workflows and personal projects'
   },
   {
     name: 'Apache Spark',
-    icon: '/images/Spark.png',
+    icon: '/images/spark.png',
     description: 'Big data processing for large-scale analytics and ETL pipelines in enterprise environments'
   },
   {
     name: 'Snowflake',
-    icon: '/images/Snowflake.png',
+    icon: '/images/snowflake.png',
     description: 'Data warehousing solution for analytics and business intelligence projects'
   },
   {
     name: 'PostgreSQL',
-    icon: '/images/PostgreSQL.png',
+    icon: '/images/postgresql.png',
     description: 'Primary database for transactional systems and data storage in various applications'
   },
   {
     name: 'Docker',
-    icon: '/images/Docker.png',
+    icon: '/images/docker.png',
     description: 'Containerization for ML model deployment and microservices architecture'
   }
 ]
