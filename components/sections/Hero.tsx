@@ -221,7 +221,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src={getImagePath("/my-images/apache-Spark.png")}
+                      src={getImagePath("/my-images/apache-spark.png")}
                       alt="Apache Spark"
                       width={32}
                       height={32}
