@@ -102,7 +102,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/gcp.png"
+                      src="/images/GCP.png"
                       alt="Google Cloud Platform"
                       width={32}
                       height={32}
@@ -130,7 +130,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/aws.png"
+                      src="/images/AWS.png"
                       alt="Amazon Web Services"
                       width={32}
                       height={32}
@@ -158,7 +158,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/snowflake.png"
+                      src="/images/Snowflake.png"
                       alt="Snowflake"
                       width={32}
                       height={32}
@@ -186,7 +186,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/python.png"
+                      src="/images/Python.png"
                       alt="Python"
                       width={32}
                       height={32}
@@ -214,7 +214,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/apache-spark.png"
+                      src="/images/apache-Spark.png"
                       alt="Apache Spark"
                       width={32}
                       height={32}
@@ -242,7 +242,7 @@ const Hero = () => {
                      }}>
                   <div className="w-8 h-8 rounded flex items-center justify-center animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
                     <Image
-                      src="/images/postgresql.png"
+                      src="/images/PostgreSQL.png"
                       alt="PostgreSQL"
                       width={32}
                       height={32}

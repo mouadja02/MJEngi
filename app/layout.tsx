@@ -27,6 +27,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'Mouad Jaouhari' }],
   creator: 'Mouad Jaouhari',
   publisher: 'Mouad Jaouhari',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/images/MJ.png', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/images/MJ.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -34,6 +42,14 @@ export const metadata: Metadata = {
     title: 'Mouad Jaouhari | Data & ML Engineer Portfolio',
     description: 'Data & ML engineer with expertise in cloud computing, machine learning, and data infrastructure.',
     siteName: 'MJ Portfolio',
+    images: [
+      {
+        url: '/images/MJ.png',
+        width: 1200,
+        height: 630,
+        alt: 'Mouad Jaouhari - Data & ML Engineer',
+      },
+    ],
   },
   robots: {
     index: true,
