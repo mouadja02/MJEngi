@@ -12,13 +12,11 @@ import Footer from '@/components/Footer'
 import FloatingActionButton from '@/components/FloatingActionButton'
 import AnimatedBackground from '@/components/AnimatedBackground'
 import SectionAnimator from '@/components/SectionAnimator'
-import CustomCursor from '@/components/CustomCursor'
 
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-secondary-50 dark:bg-secondary-900 text-secondary-800 dark:text-secondary-200">
       <AnimatedBackground />
-      <CustomCursor />
       <Header />
       <Hero />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 space-y-24 sm:space-y-32">
