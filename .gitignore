@@ -28,6 +28,8 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
+# Allow public environment files (for non-sensitive data only)
+!.env.public
 
 # vercel
 .vercel
