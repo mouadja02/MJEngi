@@ -3,6 +3,15 @@ import { Inter, Poppins, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
 
+// Helper function for asset paths
+function getAssetPath(path: string): string {
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  if (process.env.NODE_ENV === 'production') {
+    return `/MJEngi/${cleanPath}`;
+  }
+  return `/${cleanPath}`;
+}
+
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
@@ -29,11 +38,11 @@ export const metadata: Metadata = {
   publisher: 'Mouad Jaouhari',
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/images/mj.png', type: 'image/png' },
+      { url: getAssetPath('favicon.ico') },
+      { url: getAssetPath('images/mj.png'), type: 'image/png' },
     ],
-    shortcut: '/favicon.ico',
-    apple: '/images/mj.png',
+    shortcut: getAssetPath('favicon.ico'),
+    apple: getAssetPath('images/mj.png'),
   },
   openGraph: {
     type: 'website',
@@ -44,7 +53,7 @@ export const metadata: Metadata = {
     siteName: 'MJ Portfolio',
     images: [
       {
-        url: '/images/mj.png',
+        url: getAssetPath('images/mj.png'),
         width: 1200,
         height: 630,
         alt: 'Mouad Jaouhari - Data & ML Engineer',

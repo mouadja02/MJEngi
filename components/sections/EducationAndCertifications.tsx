@@ -4,6 +4,7 @@ import SectionTitle from '../SectionTitle'
 import { motion } from 'framer-motion'
 import { GraduationCap, Award, Calendar, CheckCircle2, Loader2 } from 'lucide-react'
 import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
 
 const educationData = [
     {
@@ -27,56 +28,56 @@ const certificationsData = [
     {
         name: 'Data Engineering Professional Certificate',
         issuer: 'IBM',
-        icon: '/images/ibm.png',
+        icon: 'images/ibm.png',
         status: 'In progress',
         credentialId: null,
     },
     {
         name: 'Machine Learning for Trading',
         issuer: 'Google Cloud Skills Boost',
-        icon: '/images/gcp.png',
+        icon: 'images/gcp.png',
         status: 'Issued',
         credentialId: 'NC1D4D6YB39E',
     },
     {
         name: 'Modern Data Engineering with Snowflake',
         issuer: 'Snowflake',
-        icon: '/images/snowflake.png',
+        icon: 'images/snowflake.png',
         status: 'Issued',
         credentialId: 'Z1LFG4VV1KY1',
     },
     {
         name: 'Google IT Support Specialization',
         issuer: 'Google',
-        icon: '/images/google.png',
+        icon: 'images/google.png',
         status: 'Issued',
         credentialId: '4NKNVNGX01MA',
     },
     {
         name: 'AI on Microsoft Azure',
         issuer: 'Microsoft',
-        icon: '/images/microsoft.png',
+        icon: 'images/microsoft.png',
         status: 'Issued',
         credentialId: 'Z1LFG4VV1KY1',
     },
     {
         name: 'Machine Learning with Python',
         issuer: 'IBM',
-        icon: '/images/ibm.png',
+        icon: 'images/ibm.png',
         status: 'Issued',
         credentialId: 'R7ED6GHYCRJH',
     },
     {
         name: 'Computer Vision Fundamentals with Google Cloud',
         issuer: 'Google Cloud Skills Boost',
-        icon: '/images/gcp.png',
+        icon: 'images/gcp.png',
         status: 'Issued',
         credentialId: 'EP4BBWKU4XH1',
     },
     {
         name: 'Python Reinforcement Learning, Deep Q-Learning and TRFL',
         issuer: 'UDEMY',
-        icon: '/images/udemy.png',
+        icon: 'images/udemy.png',
         status: 'Issued',
         credentialId: 'UC-5392b2f8-caf1-4eb5-9f34-e066b06028b4',
     },
@@ -131,7 +132,7 @@ const EducationAndCertifications = () => {
                                 viewport={{ once: true }}
                             >
                                 <div className="w-12 h-12 mr-4 bg-white rounded-lg flex items-center justify-center p-1 shadow-sm flex-shrink-0">
-                                    <Image src={cert.icon} alt={`${cert.issuer} logo`} width={40} height={40} className="object-contain"/>
+                                    <Image src={getImagePath(cert.icon)} alt={`${cert.issuer} logo`} width={40} height={40} className="object-contain"/>
                                 </div>
                                 <div className="flex-grow">
                                     <h4 className="font-bold text-secondary-800 dark:text-secondary-200">{cert.name}</h4>

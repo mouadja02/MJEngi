@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowDown, FileText } from 'lucide-react'
+import { getAssetPath } from '@/lib/utils'
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState('')
@@ -45,7 +46,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     const link = document.createElement('a')
-    link.href = '/resume.pdf'
+    link.href = getAssetPath('resume.pdf')
     link.download = 'Mouad_Jaouhari_Resume.pdf'
     link.click()
   }

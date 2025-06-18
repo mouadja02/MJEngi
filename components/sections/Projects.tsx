@@ -5,6 +5,7 @@ import SectionTitle from '../SectionTitle'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { Github, ExternalLink, X } from 'lucide-react'
+import { getImagePath } from '@/lib/utils'
 
 const projects = [
     {
@@ -12,7 +13,7 @@ const projects = [
       category: 'Machine Learning',
       description: 'A comprehensive market analysis platform combining blockchain data with reinforcement learning for trading strategy optimization.',
       technologies: ['Snowflake', 'Python', 'TensorFlow', 'Airflow', 'Streamlit'],
-      imageUrl: '/images/bitcoin-trading.png',
+      imageUrl: 'images/bitcoin-trading.png',
       githubUrl: '#',
       liveUrl: '#',
       details: {
@@ -28,7 +29,7 @@ const projects = [
       category: 'Data Engineering',
       description: 'Enterprise-scale data migration from legacy Hadoop to a modern AWS and Snowflake architecture, designed for scalability and efficiency.',
       technologies: ['AWS', 'Snowflake', 'dbt', 'Airflow', 'Python'],
-      imageUrl: '/images/data-migration.png',
+      imageUrl: 'images/data-migration.png',
       githubUrl: '#',
     },
     {
@@ -36,7 +37,7 @@ const projects = [
       category: 'Research',
       description: 'Optimizing satellite communication routing algorithms for IoT devices, resulting in a published IEEE research paper.',
       technologies: ['MATLAB', 'C++', 'Algorithm Design', 'Network Simulation'],
-      imageUrl: '/images/satellite-iot.png',
+      imageUrl: 'images/satellite-iot.png',
       liveUrl: 'https://ieeexplore.ieee.org/document/10667193/',
     },
 ]
@@ -86,7 +87,7 @@ const Projects = () => {
                     >
                         <div className="relative h-56">
                             <Image
-                                src={project.imageUrl || ''}
+                                src={getImagePath(project.imageUrl || '')}
                                 alt={project.title}
                                 layout="fill"
                                 objectFit="cover"
@@ -126,7 +127,7 @@ const Projects = () => {
                         >
                             <div className="relative h-80">
                                 <Image
-                                    src={selectedProject.imageUrl || ''}
+                                    src={getImagePath(selectedProject.imageUrl || '')}
                                     alt={selectedProject.title}
                                     layout="fill"
                                     objectFit="cover"
