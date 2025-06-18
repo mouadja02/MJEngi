@@ -51,22 +51,22 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center text-center overflow-hidden">
-      <div className="relative z-10 p-4">
+    <section id="home" className="relative h-screen flex items-center justify-center text-center overflow-hidden bg-white dark:bg-secondary-900">
+      <div className="relative z-10 p-4 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 dark:text-secondary-50">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 dark:text-secondary-50 mb-4">
             Mouad Jaouhari
           </h1>
           <p className="mt-4 text-lg sm:text-xl md:text-2xl text-primary-600 dark:text-primary-400 font-heading">
             I transform complex data into intelligent solutions.
           </p>
-          <div className="mt-2 text-lg sm:text-xl md:text-2xl text-secondary-600 dark:text-secondary-400 font-mono h-8">
+          <div className="mt-6 text-lg sm:text-xl md:text-2xl text-secondary-600 dark:text-secondary-400 font-mono h-8 flex items-center justify-center">
             <span className="border-b-2 border-accent-500">{currentText}</span>
-            <span className="animate-ping">|</span>
+            <span className="animate-ping ml-1">|</span>
           </div>
         </motion.div>
 
@@ -74,7 +74,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <button 
             onClick={scrollToContact}
