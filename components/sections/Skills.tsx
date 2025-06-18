@@ -64,12 +64,12 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="bg-white dark:bg-secondary-800 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center"
+            className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 flex flex-col items-center text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
-            whileHover={{ y: -5, shadow: "xl" }}
+            whileHover={{ y: -5 }}
           >
             <div className="w-20 h-20 mb-6 relative">
               <Image src={skill.icon} alt={`${skill.name} logo`} layout="fill" objectFit="contain" />

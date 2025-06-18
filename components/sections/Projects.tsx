@@ -66,7 +66,7 @@ const Projects = () => {
                         className={`px-6 py-2 text-lg font-semibold rounded-full transition-all duration-300 ${
                             selectedCategory === category
                                 ? 'bg-primary-500 text-white shadow-lg'
-                                : 'bg-white dark:bg-secondary-800 text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-700'
+                                : 'bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 text-secondary-700 dark:text-secondary-300 hover:bg-white/20 dark:hover:bg-secondary-700/20'
                         }`}
                     >
                         {category}
@@ -79,10 +79,10 @@ const Projects = () => {
                 {filteredProjects.map((project, index) => (
                     <motion.div
                         key={index}
-                        className="bg-white dark:bg-secondary-800 rounded-2xl shadow-lg overflow-hidden group cursor-pointer"
+                        className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden group cursor-pointer"
                         onClick={() => setSelectedProject(project)}
                         layoutId={`project-card-${project.title}`}
-                        whileHover={{ y: -5, shadow: "xl" }}
+                        whileHover={{ y: -5 }}
                     >
                         <div className="relative h-56">
                             <Image
@@ -120,7 +120,7 @@ const Projects = () => {
                         onClick={() => setSelectedProject(null)}
                     >
                         <motion.div
-                            className="bg-white dark:bg-secondary-800 rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
+                            className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto"
                             layoutId={`project-card-${selectedProject.title}`}
                             onClick={(e) => e.stopPropagation()}
                         >
@@ -133,7 +133,7 @@ const Projects = () => {
                                 />
                                 <button
                                     onClick={() => setSelectedProject(null)}
-                                    className="absolute top-4 right-4 bg-white/50 hover:bg-white rounded-full p-2 transition-colors duration-300"
+                                    className="absolute top-4 right-4 bg-white/20 hover:bg-white/40 backdrop-blur-md border border-white/30 rounded-full p-2 transition-colors duration-300"
                                 >
                                     <X className="h-6 w-6 text-secondary-800" />
                                 </button>
