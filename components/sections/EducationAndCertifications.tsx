@@ -124,7 +124,7 @@ const EducationAndCertifications = () => {
                         {certificationsData.map((cert, index) => (
                             <motion.div 
                                 key={index}
-                                className="flex items-center bg-white dark:bg-secondary-800 p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                                className="flex items-center bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 p-4 rounded-xl transition-shadow duration-300"
                                 initial={{ opacity: 0, x: 20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.2 }}

@@ -51,7 +51,7 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
                 {/* Contact Form */}
                 <motion.div 
-                    className="bg-white dark:bg-secondary-800 p-8 rounded-2xl shadow-lg"
+                    className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
@@ -60,9 +60,9 @@ const Contact = () => {
                     <h3 className="text-2xl font-bold mb-6 text-secondary-900 dark:text-white">Send me a message</h3>
                     <form onSubmit={handleSubmit}>
                         <div className="space-y-6">
-                            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required className="w-full p-4 bg-secondary-100 dark:bg-secondary-700 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none transition-all" />
-                            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required className="w-full p-4 bg-secondary-100 dark:bg-secondary-700 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none transition-all" />
-                            <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" required rows={5} className="w-full p-4 bg-secondary-100 dark:bg-secondary-700 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none transition-all"></textarea>
+                            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" required className="w-full p-4 bg-white/5 dark:bg-secondary-900/20 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none transition-all placeholder:text-secondary-400" />
+                            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" required className="w-full p-4 bg-white/5 dark:bg-secondary-900/20 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none transition-all placeholder:text-secondary-400" />
+                            <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" required rows={5} className="w-full p-4 bg-white/5 dark:bg-secondary-900/20 rounded-lg focus:ring-2 focus:ring-primary-500 outline-none transition-all placeholder:text-secondary-400"></textarea>
                         </div>
                         <button type="submit" disabled={isSubmitting} className="mt-6 w-full flex items-center justify-center gap-2 py-4 px-6 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-300 disabled:bg-primary-300">
                             <Send size={20} />
@@ -81,7 +81,7 @@ const Contact = () => {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <div className="bg-white dark:bg-secondary-800 p-8 rounded-2xl shadow-lg">
+                    <div className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl">
                         <h3 className="text-2xl font-bold mb-6 text-secondary-900 dark:text-white">Contact Information</h3>
                         <div className="space-y-4">
                             <div className="flex items-center gap-4">
@@ -96,11 +96,11 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-white dark:bg-secondary-800 p-8 rounded-2xl shadow-lg">
+                    <div className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl">
                         <h3 className="text-2xl font-bold mb-6 text-secondary-900 dark:text-white">Find me on</h3>
                         <div className="flex gap-6">
                             {socialLinks.map(link => (
-                                <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary-100 dark:bg-secondary-700 rounded-full text-secondary-600 dark:text-secondary-300 hover:bg-primary-500 hover:text-white transition-all duration-300">
+                                <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="p-3 bg-secondary-100 dark:bg-secondary-700/50 rounded-full text-secondary-600 dark:text-secondary-300 hover:bg-primary-500 hover:text-white transition-all duration-300">
                                     <link.icon size={24} />
                                 </a>
                             ))}

@@ -68,7 +68,7 @@ const Experience = () => {
                 
                 {/* Card */}
                 <div className="w-full sm:w-1/2 sm:px-8">
-                  <div className="bg-white dark:bg-secondary-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                  <div className="bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl transition-shadow duration-300">
                     <h3 className="text-2xl font-bold text-secondary-900 dark:text-white mb-2 font-heading">{exp.role}</h3>
                     <div className="flex items-center gap-2 text-primary-600 dark:text-primary-400 font-semibold mb-4">
                         <Building size={16} /> {exp.company}

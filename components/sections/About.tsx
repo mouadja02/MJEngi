@@ -13,7 +13,7 @@ const About = () => {
       icon: GraduationCap,
     },
     {
-      value: '15+',
+      value: '10+',
       label: 'Projects Completed',
       icon: Zap,
     },
@@ -39,7 +39,7 @@ const About = () => {
           {/* Left side: Bio and Journey */}
           <div className="lg:col-span-3 space-y-8">
             <motion.div 
-              className="p-8 bg-white dark:bg-secondary-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="p-8 bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 rounded-2xl transition-shadow duration-300"
               whileHover={{ y: -5 }}
             >
               <h3 className="text-2xl font-bold text-secondary-900 dark:text-white mb-4 font-heading">
@@ -51,7 +51,7 @@ const About = () => {
             </motion.div>
 
             <motion.div 
-              className="p-8 bg-white dark:bg-secondary-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="p-8 bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 rounded-2xl transition-shadow duration-300"
               whileHover={{ y: -5 }}
             >
                 <h3 className="text-2xl font-bold text-secondary-900 dark:text-white mb-6 font-heading">
@@ -74,7 +74,7 @@ const About = () => {
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
-                  className="p-6 bg-white dark:bg-secondary-800 rounded-2xl shadow-lg flex items-center space-x-6"
+                  className="p-6 bg-white/10 dark:bg-secondary-800/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center space-x-6"
                   whileHover={{ scale: 1.05 }}
                 >
                   <stat.icon className="h-12 w-12 text-primary-500" />
